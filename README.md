@@ -1,4 +1,4 @@
-# BrightHR Junior/Mid task - Dan Mahony
+# BrightHR Senior task - Dan Mahony
 
 ## Setup
 
@@ -11,7 +11,7 @@ git@github.com:djmahony/brightHrSenior.git
 Followed by:
 
 ```
-cd brightHrJunior
+cd brightHrSenior
 ```
 
 The next stage will be to install the dependances using:
