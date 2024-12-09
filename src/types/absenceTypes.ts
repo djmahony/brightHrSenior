@@ -10,5 +10,6 @@ export interface Absence {
     days: number,
     absenceType: string,
     employee: Employee,
-    approved: boolean
+    approved: boolean,
+    conflicts: boolean
 }
