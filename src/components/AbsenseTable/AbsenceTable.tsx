@@ -11,7 +11,7 @@ const AbsenceTable: React.FC<AbsenceTableProps> = ({ absences}) => {
 
     const [sortOption, setSortOption] = useState<'id' | 'name' | 'date' | 'type'>('name');
 
-    const sortedAbsences = absences.sort((a, b) => {
+    const sortedAbsences = [...absences].sort((a, b) => {
         if(sortOption === 'id') {
             return a.id - b.id;
         }
@@ -38,6 +38,7 @@ const AbsenceTable: React.FC<AbsenceTableProps> = ({ absences}) => {
                         value={sortOption}
                         onChange={(e) => setSortOption(e.target.value as 'id' | 'name' | 'date' | 'type')}
                         className={styles.sortSelect}
+                        data-testid="sort-by"
                     >
                         <option value="id">Sort by ID</option>
                         <option value="name">Sort by Name</option>
