@@ -8,7 +8,7 @@ interface AbsenceDisplayProps {
 
 const AbsenceDisplay: React.FC<AbsenceDisplayProps> = ({absence}) => {
     return (
-        <tr>
+        <tr className={absence.conflicts ? styles.rowConflicts : ''}>
             <td>{absence.id}</td>
             <td>{absence.startDate}</td>
             <td>{absence.days}</td>
